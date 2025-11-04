@@ -1,0 +1,292 @@
+/* ======================================
+   🌟 ONG Anjos de Patas — Visual Moderno Premium
+   ====================================== */
+
+:root {
+  --cor-primaria: #00bfa6;
+  --cor-secundaria: #0077cc;
+  --cor-fundo: #f4f7fb;
+  --cor-texto: #2c3e50;
+  --cor-card: #ffffff;
+  --gradiente: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  --sombra: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+  --transicao: 0.3s ease;
+  --largura-max: 1100px;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+header{
+  text-align: center;
+  flex: row;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  scroll-behavior: smooth;
+}
+
+/* ============================
+   CABEÇALHO
+============================ */
+header {
+  background: var(--gradiente);
+  color: #fff;
+  box-shadow: var(--sombra);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all var(--transicao);
+}
+
+nav a:hover {
+  background: #fff;
+  color: var(--cor-secundaria);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* ============================
+   CONTEÚDO PRINCIPAL
+============================ */
+main {
+  max-width: var(--largura-max);
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Seções */
+section {
+  background: var(--cor-card);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+h2, h3, h4 {
+  color: var(--cor-secundaria);
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+/* ============================
+   CARDS E GRIDS
+============================ */
+.list-grid, .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card, article {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--sombra);
+  transition: all var(--transicao);
+}
+
+.card:hover, article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   IMAGENS E FIGURAS
+============================ */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transicao);
+}
+
+figure img:hover {
+  transform: scale(1.03);
+}
+
+figcaption {
+  margin-top: 0.6rem;
+  font-weight: 500;
+}
+
+/* ============================
+   FORMULÁRIOS
+============================ */
+form {
+  display: grid;
+  gap: 1.3rem;
+}
+
+fieldset {
+  border: 2px solid #e0e0e0;
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  background: #fafafa;
+}
+
+legend {
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-family: inherit;
+  transition: all var(--transicao);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(0, 191, 166, 0.2);
+  outline: none;
+}
+
+/* Botões */
+button {
+  background: var(--gradiente);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transicao);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 191, 166, 0.3);
+}
+
+button[type="reset"] {
+  background: #ccc;
+  color: #333;
+}
+
+button[type="reset"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(100, 100, 100, 0.3);
+}
+
+/* ============================
+   RODAPÉ
+============================ */
+footer {
+  background: var(--gradiente);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  gap: 1rem;                /* Espaçamento entre os itens */
+  margin: 0 auto;           /* Garante centralização no container */
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #0077cc;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  section {
+    padding: 1.5rem;
+  }
+}
