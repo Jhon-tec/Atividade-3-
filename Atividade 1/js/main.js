@@ -1,6 +1,3 @@
-
-
-
 const form = document.getElementById('volunteer-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // impede o envio real

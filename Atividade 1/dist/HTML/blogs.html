@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang=pt-BR>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Comunicação & Transparência — ONG Anjos de Patas</title>
+<link rel=stylesheet href="/Atividade 1/dist/HTML/CSS/style.min.css">
+<meta name=description content="Blog de notícias, newsletter, área de imprensa e central de documentos públicos da ONG Anjos de Patinhas.">
+</head>
+
+<header class=site-header>
+<div class=container>
+<h1>Anjos de Patinhas — Comunicação & Transparência</h1>
+<p class=tagline>Notícias, releases, documentos públicos e formas de acompanhar nosso trabalho.</p>
+</div>
+<h1>Anjos de Patas</h1>
+<nav>
+<ul>
+<li><a href=index.html>Início</a></li>
+<li><a href=form.html>Seja voluntário</a></li>
+<li><a href=projetos.html>Projetos</a></li>
+<li><a href=captação.html>Doação</a></li>
+<li><a href=adoção.html>Adoção</a></li>
+</ul>
+</nav>
+</header>
+<main class=container>
+<section id=blog aria-labelledby=blog-title class=card>
+<div class=section-header>
+<h2 id=blog-title>Blog — Notícias e atualizações</h2>
+<p>Fique por dentro das adoções, campanhas e histórias de resgate.</p>
+</div>
+<div id=posts class=list-grid aria-live=polite>
+</div>
+<button id=load-more-posts class=btn-outline aria-label="Carregar mais notícias">Carregar mais</button>
+</section>
+<section id=newsletter aria-labelledby=newsletter-title class=card>
+<div class=section-header>
+<h2 id=newsletter-title>Newsletter — Fique por dentro</h2>
+<p>Receba atualizações mensais, convites para eventos e campanhas importantes.</p>
+</div>
+<form id=newsletter-form class=form aria-describedby=newsletter-hint>
+<div id=newsletter-hint class=hint>Só enviamos mensagens relacionadas ao trabalho da ONG. Você pode cancelar a inscrição a qualquer momento.</div>
+<label for=name>Nome</label>
+<input id=name name=name placeholder="Seu nome" required>
+<label for=email>E-mail</label>
+<input id=email name=email type=email placeholder=seu@exemplo.com required>
+<div class=form-actions>
+<button type=submit class=btn-primary>Assinar newsletter</button>
+</div>
+<div id=newsletter-feedback role=status aria-live=polite></div>
+</form>
+<div class=newsletter-note>
+Integração sugerida: Mailchimp, Sendinblue ou endpoint /api/subscribe (serverless). Veja README para opções.
+</div>
+</section>
+<section id=press aria-labelledby=press-title class=card>
+<div class=section-header>
+<h2 id=press-title>Área de imprensa</h2>
+<p>Releases, kit de mídia e contatos para jornalistas.</p>
+</div>
+<div class=press-top>
+<div class=press-contact>
+<strong>Contato de imprensa:</strong>
+<p><a href=mailto:imprensa@patinhasfelizes.org>imprensa@patinhasfelizes.org</a> — (11) 99999-9999</p>
+</div>
+<div class=press-filter>
+<label for=press-search>Pesquisar releases</label>
+<input id=press-search type=search placeholder="Título ou palavra-chave">
+</div>
+</div>
+<div id=releases class=list-grid aria-live=polite>
+</div>
+</section>
+<section id=docs aria-labelledby=docs-title class=card>
+<div class=section-header>
+<h2 id=docs-title>Central de documentos públicos</h2>
+<p>Relatórios, estatuto, ata e demonstrativos financeiros.</p>
+</div>
+<div id=documents class=doc-list aria-live=polite>
+</div>
+</section>
+</main>
+<footer class=site-footer role=contentinfo>
+<div class=container>
+<p>© <span id=year></span> ONG Anjos de Patinhas — CNPJ 00.000.000/0000-00</p>
+<nav aria-label=rodapé>
+<a href=#blog>Blog</a> • <a href=#newsletter>Newsletter</a> • <a href=#press>Imprensa</a> • <a href=#docs>Documentos</a>
+</nav>
+</div>
+</footer>
+<script src="/Atividade 1/dist/JS/blogs.js"></script>
+
+</html>

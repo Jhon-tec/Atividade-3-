@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('donation-form');
   const progressFill = document.getElementById('progress-fill');

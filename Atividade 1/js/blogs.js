@@ -1,3 +1,4 @@
+ HEAD
 
 document.addEventListener('DOMContentLoaded', () => {
   const posts = document.getElementById('posts');
