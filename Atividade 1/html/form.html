@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulário de Voluntariado</title>
+  <meta name="description" content="Formulário de inscrição para voluntariado">
+    <link rel="stylesheet" href="/Atividade 1/css/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Formulário de Voluntariado</h1>
+      <p>Preencha seus dados e selecione as atividades em que tem interesse.</p>
+      <h1>Anjos de Patas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="form.html">Seja voluntário</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="captação.html">Doação</a></li>
+        <li><a href="adoção.html">Adoção</a></li>
+      </ul>
+    </nav>
+    </header>
+
+    <form id="formVoluntario" action="#" method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <div>
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome completo">
+        </div>
+
+        <div>
+          <label for="email">E‑mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="seu@exemplo.com">
+        </div>
+
+        <div>
+          <label for="dataNascimento">Data de nascimento</label>
+          <input id="dataNascimento" name="dataNascimento" type="date" required>
+        </div>
+
+        <div>
+          <label for="profissao">Profissão</label>
+          <input id="profissao" name="profissao" type="text" required placeholder="Ex.: Professor, Estudante">
+        </div>
+
+        <div>
+          <label for="empresa">Empresa onde trabalha</label>
+          <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa (se aplicável)">
+        </div>
+
+        <div>
+          <label for="habilitacao">Habilitação</label>
+          <input id="habilitacao" name="habilitacao" type="text" placeholder="Ex.: CNH A, CNH B, Não tenho">
+        </div>
+
+        <div>
+          <label for="cep">CEP</label>
+          <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-?\d{3}" placeholder="00000-000" required>
+        </div>
+
+        <div>
+          <label for="bairro">Bairro</label>
+          <input id="bairro" name="bairro" type="text" required placeholder="Bairro">
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem / Observações</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos por que deseja ser voluntário, dias/horários disponíveis e experiências relevantes"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Atividades de interesse</legend>
+        <p>Selecione todas as opções que desejar.</p>
+
+        <div>
+          <input type="checkbox" id="atividade-passeador" name="atividades[]" value="Passeador">
+          <label for="atividade-passeador">Passeador</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="atividade-foto-video" name="atividades[]" value="Foto e Vídeo">
+          <label for="atividade-foto-video">Foto e Vídeo</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="atividade-rastelar" name="atividades[]" value="Rastelar gramado">
+          <label for="atividade-rastelar">Rastelar gramado</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="atividade-retirar" name="atividades[]" value="Retirar doações">
+          <label for="atividade-retirar">Retirar doações</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="atividade-escritorio" name="atividades[]" value="Atividades de escritório">
+          <label for="atividade-escritorio">Atividades de escritório</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="atividade-recepcao" name="atividades[]" value="Recepcionar visitas">
+          <label for="atividade-recepcao">Recepcionar visitas</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar inscrição</button>
+      </div>
+    </form>
+  </main>
+</body>
+<script src="/Atividade 1/js/form.js"></script>
+</html>
