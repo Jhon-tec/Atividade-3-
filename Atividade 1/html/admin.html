@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Painel Administrativo — Anjos de Patas</title>
+  <meta name="description" content="Painel administrativo estático da ONG Anjos de Patas" />
+  <link rel="stylesheet" href="/Atividade 1/css/style.css">
+
+  <style>
+
+    .admin-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .sidebar {
+      background: linear-gradient(180deg, #ffffff, #f8fafc);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      height: calc(100vh - 5rem);
+      position: sticky;
+      top: 1.5rem;
+    }
+
+    .brand-sm {
+      font-weight: 700;
+      color: var(--cor-secundaria);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 0.6rem 0.8rem;
+      color: var(--cor-texto);
+      border-radius: 8px;
+      text-decoration: none;
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+      color: #fff;
+    }
+
+    .panel {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .stat {
+      background: linear-gradient(180deg, #fff, #f3f7fb);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .stat h3 {
+      margin-bottom: 0.5rem;
+      color: var(--cor-secundaria);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.7rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--cor-secundaria);
+    }
+
+    @media (max-width: 900px) {
+      .admin-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: relative;
+        height: auto;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Anjos de Patas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="form.html">Seja voluntário</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="captação.html">Doação</a></li>
+        <li><a href="adoção.html">Adoção</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="admin-layout">
+      <!-- MENU LATERAL -->
+      <aside class="sidebar">
+        <div class="brand-sm">Painel Administrativo</div>
+        <nav>
+          <a href="#" class="active">Dashboard</a>
+          <a href="#">Adoções</a>
+          <a href="#">Campanhas</a>
+          <a href="#">Doações</a>
+          <a href="#">Voluntários</a>
+          <a href="#">Relatórios</a>
+          <a href="#">Configurações</a>
+          <hr style="margin:1rem 0;border:none;border-top:1px solid #eee">
+          <a href="index.html">Voltar ao site</a>
+        </nav>
+      </aside>
+
+      <!-- CONTEÚDO PRINCIPAL -->
+      <section>
+        <div class="panel">
+          <h2>Visão Geral</h2>
+          <div class="cards">
+            <div class="stat">
+              <h3>Total de Animais</h3>
+              <p><strong>423</strong> registrados</p>
+            </div>
+            <div class="stat">
+              <h3>Adoções este mês</h3>
+              <p><strong>18</strong> novas famílias</p>
+            </div>
+            <div class="stat">
+              <h3>Doações (mês)</h3>
+              <p><strong>R$ 12.450</strong></p>
+            </div>
+            <div class="stat">
+              <h3>Voluntários Ativos</h3>
+              <p><strong>54</strong> atuando</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Adoções Recentes</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Animal</th>
+                <th>Telefone</th>
+                <th>Data</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mariana Souza</td>
+                <td>Atena</td>
+                <td>(11) 99999-9999</td>
+                <td>14/10/2025</td>
+                <td>Aguardando</td>
+              </tr>
+              <tr>
+                <td>Pedro Lima</td>
+                <td>Rex</td>
+                <td>(11) 98888-8888</td>
+                <td>10/10/2025</td>
+                <td>Aprovado</td>
+              </tr>
+              <tr>
+                <td>Ana Paula</td>
+                <td>Mila</td>
+                <td>(11) 97777-7777</td>
+                <td>01/10/2025</td>
+                <td>Reprovado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h2>Campanhas Ativas</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Meta</th>
+                <th>Arrecadado</th>
+                <th>Prazo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>C-501</td>
+                <td>Vacinação Comunitária</td>
+                <td>R$ 8.000</td>
+                <td>R$ 3.200</td>
+                <td>30/11/2025</td>
+              </tr>
+              <tr>
+                <td>C-502</td>
+                <td>Reforma dos Abrigos</td>
+                <td>R$ 25.000</td>
+                <td>R$ 15.900</td>
+                <td>15/01/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h2>Voluntários</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Atividades</th>
+                <th>Contato</th>
+                <th>Disponibilidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Marta Silva</td>
+                <td>Resgate, Passeios</td>
+                <td>(11) 99999-0000</td>
+                <td>Seg-Sex / manhã</td>
+              </tr>
+              <tr>
+                <td>João Pereira</td>
+                <td>Foto e Vídeo</td>
+                <td>(11) 98888-0000</td>
+                <td>Finais de semana</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 ONG Anjos de Patas — Painel Administrativo</p>
+  </footer>
+  <script src="/Atividade 1/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+       <title>Calculadora IMC</title>
+       <style>
+		body {
+			display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+                        font-family: Arial;
+                        background: #ff7a7a;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			widht:500px;
+			border: 1px solid #fafafa;
+			padding: 15px 25px;
+			border-radius: 10px;
+			background: #fafafa;
+		}
+
+		h1
+			text-align: center
+	
+		input {
+			height: 25px;
+			margin-bottom: 10px;
+			padding: 0 5px;
+		}
+		button {
+			height: 50px;
+			font-size: 15px;
+			text-tranform: uppercase;
+			font-weight: 700;
+			margin: 15px 0;	
+			border: 0;	
+			border-radius: 15px;
+			background: #ed3300;
+			color: #fff;	
+			cursor: pointer
+		}
+       </style>
+<head>
+<body> 
+       <div>
+              <h1>Calculadora de IMC</H1>
+
+              <label for="altura">Digite sua altura:</label>
+              <input type="number" id="altura">
+              
+              <label for="peso">Digite seu peso:</label>
+              <input type="number" id="peso">
+
+              <button id="calcular">calcular</button>
+
+         </div>
+
+</body>
+
+
+#include <stdio.h>
+#include <stdlib.h>
+

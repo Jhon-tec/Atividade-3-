@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".card-grid .card");e.forEach(e=>{e.addEventListener("mouseenter",()=>{e.style.transform="scale(1.05)",e.style.backgroundColor="#fff8dc",e.style.transition="0.3s"}),e.addEventListener("mouseleave",()=>{e.style.transform="scale(1)",e.style.backgroundColor=""})})});

@@ -1,0 +1,240 @@
+<<<<<<< HEAD
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adote um Cachorro</title>
+  <meta name="description" content="Página de adoção de cachorros — conheça os cães disponíveis e envie sua inscrição para adoção.">
+  <link rel="stylesheet" href="/Atividade 1/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Pular para o conteúdo</a>
+
+  <header>
+    <h1>Adote um Cachorro</h1>
+    <p>Conheça os cães disponíveis para adoção e preencha o formulário para iniciar o processo.</p>
+    <h1>Anjos de Patas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="form.html">Seja voluntário</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="captação.html">Doação</a></li>
+        <li><a href="adoção.html">Adoção</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main id="main" role="main">
+    <section aria-labelledby="catalogo-title">
+      <h2 id="catalogo-title">Cães disponíveis</h2>
+    </section>
+
+    <section>
+      <article aria-labelledby="nome-cao-1">
+        <figure>
+          <img src="/Atividade 1/img/download.jpg" alt="Rex, cachorro de porte médio" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-1">Rex</strong> — Porte médio, 3 anos, macho<br>
+            Temperamento: calmo, sociável com crianças.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="nome-cao-2">
+        <figure>
+          <img src="/Atividade 1/img/dog.jpg" alt="Atena, cadela pequena" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-2">Atena</strong> — Porte pequeno, 6 meses, fêmea<br>
+            Temperamento: ativa, adora brincar.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="nome-cao-3">
+        <figure>
+          <img src="/Atividade 1/img/grande.jpg" alt="Toby, cachorro de porte grande, pelagem dourada" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-3">Toby</strong> — Porte grande, 3 anos, macho<br>
+            Temperamento: protetor, precisa de espaço e exercícios.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="nome-cao-4">
+        <figure>
+          <img src="/Atividade 1/img/mila.jpg" alt="Mila, cadela média" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-4">Mila</strong> — Porte médio, 1 ano, fêmea<br>
+            Temperamento: carinhosa, já castrada.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="nome-cao-5">
+        <figure>
+          <img src="/Atividade 1/img/bidu.jpg" alt="Bidu, cachorro pequeno" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-5">Bidu</strong> — Porte pequeno, 5 anos, macho<br>
+            Temperamento: tranquilo, bom para apartamento.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article aria-labelledby="nome-cao-6">
+        <figure>
+          <img src="/Atividade 1/img/nina.jpg" alt="Nina, cadela média" width="400" height="250" loading="lazy">
+          <figcaption>
+            <strong id="nome-cao-6">Nina</strong> — Porte médio, 6 meses, fêmea<br>
+            Temperamento: ainda em socialização, muito curiosa.
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+
+  
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Formulário de inscrição para adoção</h2>
+
+      <form action="#" method="post" id="form-adocao">
+        <fieldset>
+          <legend>Escolha do cachorro</legend>
+
+          <p>Selecione o cachorro que deseja adotar (apenas um por inscrição):</p>
+
+          <div>
+            <input type="radio" id="dog-rex" name="cachorro" value="Rex" required>
+            <label for="dog-rex">Rex — Porte médio, 3 anos</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dog-atena" name="cachorro" value="Atena">
+            <label for="dog-atena">Atena — Porte pequeno, 6 meses</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dog-toby" name="cachorro" value="Toby">
+            <label for="dog-toby">Toby — Porte grande, 3 anos</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dog-mila" name="cachorro" value="Mila">
+            <label for="dog-mila">Mila — Porte médio, 1 ano</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dog-bidu" name="cachorro" value="Bidu">
+            <label for="dog-bidu">Bidu — Porte pequeno, 5 anos</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dog-nina" name="cachorro" value="Nina">
+            <label for="dog-nina">Nina — Porte médio, 6 meses</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <div>
+            <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+            <input id="nome" name="nome" type="text" required autocomplete="name" placeholder="Seu nome completo" aria-required="true">
+          </div>
+
+          <div>
+            <label for="email">E‑mail <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="seu@exemplo.com" aria-required="true">
+          </div>
+
+          <div>
+            <label for="telefone">Telefone / WhatsApp <span aria-hidden="true">*</span></label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel"
+                   pattern="^\(?\d{2}\)?\s?\d{4,5}-\d{4}$"
+                   title="Formato: (00) 90000-0000 ou (00) 9000-0000"
+                   placeholder="(00) 90000-0000" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="dataNascimento">Data de nascimento <span aria-hidden="true">*</span></label>
+            <input id="dataNascimento" name="dataNascimento" type="date" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="endereco">Endereço (rua, número, cidade, estado) <span aria-hidden="true">*</span></label>
+            <input id="endereco" name="endereco" type="text" placeholder="Ex.: Rua A, 123, Bairro, Cidade - UF" required aria-required="true">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre você e disponibilidade</legend>
+
+          <div>
+            <label for="moradia">Tipo de moradia <span aria-hidden="true">*</span></label>
+            <select id="moradia" name="moradia" required aria-required="true">
+              <option value="">-- selecione --</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Casa com quintal">Casa com quintal</option>
+              <option value="Casa sem quintal">Casa sem quintal</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tempo-casa">Tempo em que mora no endereço atual <span aria-hidden="true">*</span></label>
+            <input id="tempo-casa" name="tempoCasa" type="text" placeholder="Ex.: 2 anos" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="horarios">Horários em que o cão ficará sozinho (breve descrição)</label>
+            <input id="horarios" name="horarios" type="text" placeholder="Ex.: Trabalho 9h-18h, presença à noite">
+          </div>
+
+          <div>
+            <label for="experiencia">Você já teve/tem animais? Conte a experiência</label>
+            <textarea id="experiencia" name="experiencia" rows="4" placeholder="Descreva sua experiência com cães ou outros pets"></textarea>
+          </div>
+
+          <div>
+            <label for="referencias">Referências (opcional) — nome e telefone</label>
+            <input id="referencias" name="referencias" type="text" placeholder="Ex.: Maria (11) 9xxxx-xxxx">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Compromissos</legend>
+
+          <div>
+            <input type="checkbox" id="compromisso-visit" name="compromissoVisit" required aria-required="true">
+            <label for="compromisso-visit">Autorizo visita prévia do abrigo ao meu endereço</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="compromisso-adeq" name="compromissoAdeq" required aria-required="true">
+            <label for="compromisso-adeq">Confirmo que poderei prover abrigo, alimentação e cuidados veterinários</label>
+          </div>
+
+          <div>
+            <label for="observacoes">Observações adicionais</label>
+            <textarea id="observacoes" name="observacoes" rows="3" placeholder="Informações extras que desejar adicionar"></textarea>
+          </div>
+        </fieldset>
+
+        <div>
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar inscrição</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contato: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+    <p>&copy; Atividade 1, Braz Cubas Virtual. Todos os direitos reservados</p>
+    <p>Para saber mais sobre mim <a href="https://github.com/Jhon-tec" target="_blank" rel="noopener noreferrer">clique aqui</a></p>
+  </footer>
+</body>
+<script src="/Atividade 1/js/adocao.js"></script>
+
+</html>

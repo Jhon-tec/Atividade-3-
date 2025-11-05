@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<hmml lang="pt-BR"
+
+// Gradiente linear
+const gradiente = ctx.createLinearGradient(0, 0, 200, 0);
+gradiente.addColorStop(0, '#ff7675');
+gradiente.addColorStop(1, '#74b9ff');
+ctx.fillStyle = gradiente;
+ctx.fillRect(50, 350, 200, 100);
+
+// Texto estilizado
+ctx.font = '30px Arial';
+ctx.fillStyle = '#2d3436';
+ctx.fillText('HTML5 Canvas', 300, 400);
